@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  iisha
+
+  Created by 張翔 on 2018/12/28.
+  Copyright © 2018 張翔. All rights reserved.
+*/
+NSCameraUsageDescription = "写真を撮影するのに使用します";
+NSPhotoLibraryAddUsageDescription = "写真を保存するのに使用します。";
+NSPhotoLibraryUsageDescription = "写真を共有するために使用します。";

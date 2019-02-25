@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D8C7CAEABCEB1A27F789D6 /* Pods_iisha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B936F660927375373A78412 /* Pods_iisha.framework */; };
+		CA65052921D7AE97001D58F0 /* insta.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CA65052821D7AE96001D58F0 /* insta.mlmodel */; };
+		CA65052B21D7B560001D58F0 /* Grader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65052A21D7B560001D58F0 /* Grader.swift */; };
+		CA65052D21D7B7F3001D58F0 /* GraderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65052C21D7B7F3001D58F0 /* GraderDelegate.swift */; };
+		CA65052F21D7E015001D58F0 /* PHAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65052E21D7E015001D58F0 /* PHAsset.swift */; };
+		CA85CDBE21D79E6E001238D5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CDBD21D79E6E001238D5 /* ResultViewController.swift */; };
 		CAC6B7B021D5EE2C00996454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7AF21D5EE2C00996454 /* AppDelegate.swift */; };
-		CAC6B7B221D5EE2C00996454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7B121D5EE2C00996454 /* ViewController.swift */; };
 		CAC6B7B521D5EE2C00996454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B7B321D5EE2C00996454 /* Main.storyboard */; };
 		CAC6B7B721D5EE3000996454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B7B621D5EE3000996454 /* Assets.xcassets */; };
 		CAC6B7BA21D5EE3000996454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B7B821D5EE3000996454 /* LaunchScreen.storyboard */; };
+		CAC6B7C421D6359800996454 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7C321D6359800996454 /* AdManager.swift */; };
+		CAC6B7C621D637AC00996454 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7C521D637AC00996454 /* CameraViewController.swift */; };
+		CAC6B7C821D63A1200996454 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B7C721D63A1200996454 /* GoogleService-Info.plist */; };
+		CAC6B7CA21D6424800996454 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7C921D6424800996454 /* UIColor.swift */; };
+		CAC6B7CC21D64C0C00996454 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7CB21D64C0C00996454 /* Camera.swift */; };
+		CAC6B7D921D6528900996454 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B7DB21D6528900996454 /* InfoPlist.strings */; };
+		CAC6B7DD21D7407100996454 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B7DC21D7407100996454 /* CameraDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BBEB0CA516D344E652A83A /* Pods-iisha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iisha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iisha/Pods-iisha.debug.xcconfig"; sourceTree = "<group>"; };
+		9B936F660927375373A78412 /* Pods_iisha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iisha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA65052821D7AE96001D58F0 /* insta.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = insta.mlmodel; sourceTree = "<group>"; };
+		CA65052A21D7B560001D58F0 /* Grader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grader.swift; sourceTree = "<group>"; };
+		CA65052C21D7B7F3001D58F0 /* GraderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraderDelegate.swift; sourceTree = "<group>"; };
+		CA65052E21D7E015001D58F0 /* PHAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAsset.swift; sourceTree = "<group>"; };
+		CA85CDBD21D79E6E001238D5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		CAC6B7AC21D5EE2C00996454 /* iisha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iisha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC6B7AF21D5EE2C00996454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAC6B7B121D5EE2C00996454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAC6B7B421D5EE2C00996454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAC6B7B621D5EE3000996454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC6B7B921D5EE3000996454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC6B7BB21D5EE3000996454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC6B7C321D6359800996454 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		CAC6B7C521D637AC00996454 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CAC6B7C721D63A1200996454 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAC6B7C921D6424800996454 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CAC6B7CB21D64C0C00996454 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		CAC6B7CD21D650A100996454 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		CAC6B7CE21D650A100996454 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CAC6B7DA21D6528900996454 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAC6B7DC21D7407100996454 /* CameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDelegate.swift; sourceTree = "<group>"; };
+		DA24D3FF5A16D463985F4822 /* Pods-iisha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iisha.release.xcconfig"; path = "Pods/Target Support Files/Pods-iisha/Pods-iisha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D8C7CAEABCEB1A27F789D6 /* Pods_iisha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F130CC4554516179DB1E895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47BBEB0CA516D344E652A83A /* Pods-iisha.debug.xcconfig */,
+				DA24D3FF5A16D463985F4822 /* Pods-iisha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CAC6B7A321D5EE2C00996454 = {
 			isa = PBXGroup;
 			children = (
 				CAC6B7AE21D5EE2C00996454 /* iisha */,
 				CAC6B7AD21D5EE2C00996454 /* Products */,
+				3F130CC4554516179DB1E895 /* Pods */,
+				F6CB168F1853392C1500747E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +95,32 @@
 			isa = PBXGroup;
 			children = (
 				CAC6B7AF21D5EE2C00996454 /* AppDelegate.swift */,
-				CAC6B7B121D5EE2C00996454 /* ViewController.swift */,
 				CAC6B7B321D5EE2C00996454 /* Main.storyboard */,
 				CAC6B7B621D5EE3000996454 /* Assets.xcassets */,
 				CAC6B7B821D5EE3000996454 /* LaunchScreen.storyboard */,
+				CAC6B7C721D63A1200996454 /* GoogleService-Info.plist */,
+				CAC6B7C321D6359800996454 /* AdManager.swift */,
+				CAC6B7C521D637AC00996454 /* CameraViewController.swift */,
+				CA65052821D7AE96001D58F0 /* insta.mlmodel */,
+				CA85CDBD21D79E6E001238D5 /* ResultViewController.swift */,
+				CA65052A21D7B560001D58F0 /* Grader.swift */,
+				CA65052C21D7B7F3001D58F0 /* GraderDelegate.swift */,
+				CAC6B7CB21D64C0C00996454 /* Camera.swift */,
+				CAC6B7DC21D7407100996454 /* CameraDelegate.swift */,
+				CA65052E21D7E015001D58F0 /* PHAsset.swift */,
+				CAC6B7C921D6424800996454 /* UIColor.swift */,
 				CAC6B7BB21D5EE3000996454 /* Info.plist */,
+				CAC6B7DB21D6528900996454 /* InfoPlist.strings */,
 			);
 			path = iisha;
+			sourceTree = "<group>";
+		};
+		F6CB168F1853392C1500747E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B936F660927375373A78412 /* Pods_iisha.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAC6B7BE21D5EE3000996454 /* Build configuration list for PBXNativeTarget "iisha" */;
 			buildPhases = (
+				753C0EAA247338CEF2814254 /* [CP] Check Pods Manifest.lock */,
 				CAC6B7A821D5EE2C00996454 /* Sources */,
 				CAC6B7A921D5EE2C00996454 /* Frameworks */,
 				CAC6B7AA21D5EE2C00996454 /* Resources */,
+				DDC03F2A4A1075945A90E8C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,6 +167,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = CAC6B7A321D5EE2C00996454;
 			productRefGroup = CAC6B7AD21D5EE2C00996454 /* Products */;
@@ -123,19 +185,79 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC6B7BA21D5EE3000996454 /* LaunchScreen.storyboard in Resources */,
+				CAC6B7C821D63A1200996454 /* GoogleService-Info.plist in Resources */,
 				CAC6B7B721D5EE3000996454 /* Assets.xcassets in Resources */,
 				CAC6B7B521D5EE2C00996454 /* Main.storyboard in Resources */,
+				CAC6B7D921D6528900996454 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		753C0EAA247338CEF2814254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iisha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC03F2A4A1075945A90E8C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iisha/Pods-iisha-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iisha/Pods-iisha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAC6B7A821D5EE2C00996454 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC6B7B221D5EE2C00996454 /* ViewController.swift in Sources */,
+				CAC6B7C421D6359800996454 /* AdManager.swift in Sources */,
+				CA65052B21D7B560001D58F0 /* Grader.swift in Sources */,
+				CAC6B7DD21D7407100996454 /* CameraDelegate.swift in Sources */,
+				CA65052D21D7B7F3001D58F0 /* GraderDelegate.swift in Sources */,
+				CA85CDBE21D79E6E001238D5 /* ResultViewController.swift in Sources */,
+				CA65052F21D7E015001D58F0 /* PHAsset.swift in Sources */,
+				CAC6B7CC21D64C0C00996454 /* Camera.swift in Sources */,
+				CA65052921D7AE97001D58F0 /* insta.mlmodel in Sources */,
+				CAC6B7CA21D6424800996454 /* UIColor.swift in Sources */,
+				CAC6B7C621D637AC00996454 /* CameraViewController.swift in Sources */,
 				CAC6B7B021D5EE2C00996454 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +269,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CAC6B7B421D5EE2C00996454 /* Base */,
+				CAC6B7CD21D650A100996454 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +278,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				CAC6B7B921D5EE3000996454 /* Base */,
+				CAC6B7CE21D650A100996454 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC6B7DB21D6528900996454 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC6B7DA21D6528900996454 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -166,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -227,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -280,17 +414,21 @@
 		};
 		CAC6B7BF21D5EE3000996454 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BBEB0CA516D344E652A83A /* Pods-iisha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = iisha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sho.iisha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +436,21 @@
 		};
 		CAC6B7C021D5EE3000996454 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA24D3FF5A16D463985F4822 /* Pods-iisha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = iisha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sho.iisha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
