@@ -9,23 +9,23 @@
 import Foundation
 import Firebase
 
-struct Item {
-    var id: Int
+struct Item: Codable {
+    var id: String
     var name: String
     var jewelID: Int
-    var imageRef: StorageReference
-    var comment: String
-    var rating: ItemRating
+//    var imageRef: StorageReference?
+//    var comment: String?
+//    var rating: ItemRating?
     
-    
-    init(id: Int, name: String, jewelID: Int, imageRef: StorageReference, comment: String, rating: ItemRating) {
-        self.id = id
-        self.name = name
-        self.jewelID = jewelID
-        self.imageRef = imageRef
-        self.comment = comment
-        self.rating = rating
-    }
+//
+//    init(id: String, name: String, jewelID: Int, imageRef: StorageReference?, comment: String?, rating: ItemRating?) {
+//        self.id = id
+//        self.name = name
+//        self.jewelID = jewelID
+//        self.imageRef = imageRef
+//        self.comment = comment
+//        self.rating = rating
+//    }
     
     enum ItemRating: Int {
         case star0 = 0

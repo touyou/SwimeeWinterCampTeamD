@@ -20,26 +20,27 @@ class ItemManager {
     let storage = Storage.storage()
     
     
-    func getItemsFromUserDefaults() -> [Item] {
-        if let items = userDefaults.array(forKey: "items") as? [Item] {
+    func getItemsFromUserDefaults() -> [Data] {
+        if let items = userDefaults.array(forKey: "items") as? [Data] {
             return items
         } else {
             return []
         }
     }
     
-    func setItemArrayToUserDefaults(_ itemArray: [Item]) {
+    func setItemArrayToUserDefaults(_ itemArray: [Data]) {
         userDefaults.set(itemArray, forKey: "items")
     }
     
     func saveItemToUserDefaults(_ item: Item) {
         var items = getItemsFromUserDefaults()
-        items.append(item)
+        guard let data = try? JSONEncoder().encode(item) else { return }
+        items.append(data)
         setItemArrayToUserDefaults(items)
     }
     
-    func post(placeID: Int, placeName: String, image: UIImage, comment: String, rating: Item.ItemRating, completion: @escaping (_ error: Error?) -> Void) {
-        let placeIDString = String(placeID)
+    func post(tourspot: Tourspot, image: UIImage, comment: String, rating: Item.ItemRating, completion: @escaping (_ error: Error?) -> Void) {
+        let placeIDString = tourspot.mng.refbase
         let imageRef = storage.reference(withPath: "image/\(placeIDString).jpg")
         guard let imageData = image.jpegData(compressionQuality: 1) else {
             completion(postError.cannotConvertJPEG)
@@ -50,7 +51,7 @@ class ItemManager {
             if let error = error{
                 completion(error)
             } else {
-                let item = Item(id: placeID, name: placeName, jewelID: Int.random(in: 0...11), imageRef: imageRef, comment: comment, rating: rating)
+                let item = Item(id: placeIDString, name: tourspot.name.name1?.written ?? "", jewelID: Int.random(in: 0...11))
                 self?.saveItemToUserDefaults(item)
                 completion(nil)
             }

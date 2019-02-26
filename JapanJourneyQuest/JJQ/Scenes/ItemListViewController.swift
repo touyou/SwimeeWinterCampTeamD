@@ -19,13 +19,28 @@ class ItemListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        items = ItemManager.shared.getItemsFromUserDefaults()
+        let itemsData = ItemManager.shared.getItemsFromUserDefaults()
+        items = []
+        for data in itemsData {
+            guard let item = try? JSONDecoder().decode(Item.self, from: data) else { continue }
+            items.append(item)
+        }
+        collectionView.reloadData()
 
         navigationController?.setupBarColor()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        reloadCollectionView()
+    }
+    
     func reloadCollectionView() {
-        items = ItemManager.shared.getItemsFromUserDefaults()
+        let itemsData = ItemManager.shared.getItemsFromUserDefaults()
+        items = []
+        for data in itemsData {
+            guard let item = try? JSONDecoder().decode(Item.self, from: data) else { continue }
+            items.append(item)
+        }
         collectionView.reloadData()
     }
 

@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
             tableView.register(SpotTitleTableViewCell.self)
             tableView.register(MapTableViewCell.self)
             tableView.register(DescriptionTableViewCell.self)
+            tableView.register(PostTableViewCell.self)
             tableView.tableFooterView = UIView()
         }
     }
@@ -34,7 +35,7 @@ extension DetailViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,9 +54,24 @@ extension DetailViewController: UITableViewDataSource {
             let cell: DescriptionTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
             cell.descriptionLabel.text = spot.descs?.first?.body ?? "No description"
             return cell
+        case 3 ..< 4:
+            let cell: PostTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.spot = spot
+            cell.delegate = self
+            return cell
         default:
             let cell = UITableViewCell()
             return cell
         }
     }
+}
+
+extension DetailViewController: PostTableViewCellDelegate {
+    func didTapSelectImage() {
+        let c = UIImagePickerController()
+        present(c, animated: true)
+        print("working!")
+    }
+    
+    
 }
