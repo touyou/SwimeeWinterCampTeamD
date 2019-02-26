@@ -42,4 +42,9 @@ extension UIImage{
         default: return Gems.jewel0
         }
     }
+    
+    struct Star {
+        static let dark = #imageLiteral(resourceName: "star_dark")
+        static let light = #imageLiteral(resourceName: "star_light")
+    }
 }

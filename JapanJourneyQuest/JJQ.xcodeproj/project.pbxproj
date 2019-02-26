@@ -34,6 +34,9 @@
 		907837B997D9B719ECCCF5F6 /* Pods_JJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F778A6CF58C6A4E3D58125 /* Pods_JJQ.framework */; };
 		CA16234322250451004A1818 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16234222250451004A1818 /* ItemCollectionViewCell.swift */; };
 		CA1623452225052E004A1818 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1623442225052E004A1818 /* UIImage+Extensions.swift */; };
+		CA16234F2225269C004A1818 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16234D2225269C004A1818 /* PostTableViewCell.swift */; };
+		CA1623502225269C004A1818 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA16234E2225269C004A1818 /* PostTableViewCell.xib */; };
+		CA162352222532B4004A1818 /* PostTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA162351222532B4004A1818 /* PostTableViewCellDelegate.swift */; };
 		CA1C1CA92225004B006DA8B9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C1CA82225004B006DA8B9 /* Item.swift */; };
 		CA1C1CAB22250102006DA8B9 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C1CAA22250102006DA8B9 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,9 @@
 		BB2912247CCCB46926EF0C07 /* Pods-JJQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.debug.xcconfig"; sourceTree = "<group>"; };
 		CA16234222250451004A1818 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA1623442225052E004A1818 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CA16234D2225269C004A1818 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		CA16234E2225269C004A1818 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		CA162351222532B4004A1818 /* PostTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		CA1C1CA82225004B006DA8B9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CA1C1CAA22250102006DA8B9 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		FC4BD55C1A8B2B4681D60C19 /* Pods-JJQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				46AF3DE72224550D0029A596 /* PlaceListViewController.storyboard */,
 				46AF3DE4222455010029A596 /* DetailViewController.storyboard */,
 				46AF3DF3222455CA0029A596 /* DetailViewController.swift */,
+				CA16234D2225269C004A1818 /* PostTableViewCell.swift */,
+				CA162351222532B4004A1818 /* PostTableViewCellDelegate.swift */,
+				CA16234E2225269C004A1818 /* PostTableViewCell.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				46AF3DE92224550D0029A596 /* PlaceListViewController.storyboard in Resources */,
 				46AF3DE6222455010029A596 /* DetailViewController.storyboard in Resources */,
 				46AF3DDC222450BB0029A596 /* LaunchScreen.storyboard in Resources */,
+				CA1623502225269C004A1818 /* PostTableViewCell.xib in Resources */,
 				46AF3DD9222450BB0029A596 /* Assets.xcassets in Resources */,
 				46AF3DED222455750029A596 /* ItemListViewController.storyboard in Resources */,
 				46AF3DD7222450BA0029A596 /* BaseTabViewController.storyboard in Resources */,
@@ -378,11 +388,13 @@
 				46AF3DF4222455CA0029A596 /* DetailViewController.swift in Sources */,
 				46AF3DFF2224E9E60029A596 /* UIApplication+Extensions.swift in Sources */,
 				46AF3E0C2224EA2D0029A596 /* Reusable.swift in Sources */,
+				CA162352222532B4004A1818 /* PostTableViewCellDelegate.swift in Sources */,
 				46AF3DD2222450BA0029A596 /* AppDelegate.swift in Sources */,
 				CA1C1CAB22250102006DA8B9 /* ItemManager.swift in Sources */,
 				CA1623452225052E004A1818 /* UIImage+Extensions.swift in Sources */,
 				CA1C1CA92225004B006DA8B9 /* Item.swift in Sources */,
 				CA16234322250451004A1818 /* ItemCollectionViewCell.swift in Sources */,
+				CA16234F2225269C004A1818 /* PostTableViewCell.swift in Sources */,
 				46AF3E042224E9F40029A596 /* UITabBarController+Extensions.swift in Sources */,
 				46AF3E0A2224EA2D0029A596 /* StoryboardInstantiable.swift in Sources */,
 				46AF3E182224FA1E0029A596 /* APIManager.swift in Sources */,
