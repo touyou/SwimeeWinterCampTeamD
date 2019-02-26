@@ -14,14 +14,14 @@ class APIManager {
     static let shared = APIManager()
     private let decoder = JSONDecoder()
 
-    private var baseURLString = "https://www.chiikinogennki.soumu.go.jp/v001/kanko/"
+    private var baseURLString = "https://www.chiikinogennki.soumu.go.jp/k-cloud-api/v001/kanko/"
     var templateRequest: URL? {
 
         return createRequest(
             for: ["町並み", "郷土景観", "展望施設",
                   "旧街道", "史跡", "地域風俗",
                   "温泉", "伝統工芸技術", "民宿"],
-            with: [.limit(50), .coordinate(latitude: 35.654764, longitude: 139.698627, meters: 100000)])
+            with: [.limit(50)])
     }
 
     enum Params {
@@ -84,13 +84,23 @@ class APIManager {
         return URL(string: requestURLString)
     }
 
-    func getInformations(_ url: URL, _ completion: @escaping ([Kanko]) -> Void) {
+    func createImageRequest(_ image: Image?, _ mng: Management) -> URL? {
+
+        guard let image = image else { return nil }
+
+        var requestURLString = baseURLString + "view/"
+        requestURLString += mng.refbase + "/"
+        requestURLString += image.fid
+        return URL(string: requestURLString)
+    }
+
+    func getInformations(_ url: URL, _ completion: @escaping ([Tourspot]) -> Void) {
 
         Alamofire.request(url).responseJSON { response in
 
             if let error = response.error {
 
-                print(error)
+                print("Response Error: \(error)")
                 return
             }
 
@@ -98,11 +108,11 @@ class APIManager {
 
                 do {
 
-                    let datas = try self.decoder.decode([Kanko].self, from: data)
-                    completion(datas)
+                    let response = try self.decoder.decode(APIResponse.self, from: data)
+                    completion(response.tourspots)
                 } catch let error {
 
-                    print(error)
+                    print("Parse Error: \(error)")
                     completion([])
                 }
             }
@@ -127,7 +137,7 @@ class APIManager {
 
 struct Name: Codable {
     let written: String
-    let spoken: String
+    let spoken: String?
 }
 
 struct Names: Codable {
@@ -136,7 +146,7 @@ struct Names: Codable {
 }
 
 struct Image: Codable {
-    let name: Name
+    let name: Name?
     let fid: String
 }
 
@@ -150,13 +160,13 @@ struct Place: Codable {
         let latitude: String    // 緯度
     }
 
-    let coordinate: Coordinate
-    let city: Name
-    let street: Name
-    let building: Name
-    let phone: String
-    let email: String
-    let url: URL
+    let coordinate: Coordinate?
+    let city: Name?
+    let street: Name?
+    let building: Name?
+    let phone: String?
+    let email: String?
+    let url: URL?
 }
 
 struct Foreign: Codable {
@@ -171,7 +181,7 @@ struct Foreign: Codable {
         let lang8: String   // イタリア語
         let lang9: String   // ロシア語
         let lang10: String  // スペイン語
-        let info: String
+        let info: String?
     }
 
     let written: Language
@@ -179,22 +189,26 @@ struct Foreign: Codable {
 }
 
 struct Wifi: Codable {
-    let established: String
-    let url: URL
-    let info: String
+    let established: String?
+    let url: URL?
+    let info: String?
 }
 
 struct Management: Codable {
     let refbase: String
-    let refsub: String
+    let refsub: Int?
 }
 
-struct Kanko: Codable {
+struct Tourspot: Codable {
     let name: Names
-    let views: [Image]
-    let descs: [Description]
-    let place: Place
-    let foreign: Foreign
-    let wifi: Wifi
+    let views: [Image]?
+    let descs: [Description]?
+    let place: Place?
+    let foreign: Foreign?
+    let wifi: Wifi?
     let mng: Management
+}
+
+struct APIResponse: Codable {
+    let tourspots: [Tourspot]
 }
