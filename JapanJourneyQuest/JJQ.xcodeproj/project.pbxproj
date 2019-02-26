@@ -18,6 +18,7 @@
 		46AF3DF2222455BC0029A596 /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3DF1222455BC0029A596 /* PlaceListViewController.swift */; };
 		46AF3DF4222455CA0029A596 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3DF3222455CA0029A596 /* DetailViewController.swift */; };
 		46AF3DF72224A9CF0029A596 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46AF3DF62224A9CF0029A596 /* GoogleService-Info.plist */; };
+		46AF3DFB2224B81B0029A596 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3DFA2224B81B0029A596 /* UIColor+Extensions.swift */; };
 		907837B997D9B719ECCCF5F6 /* Pods_JJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F778A6CF58C6A4E3D58125 /* Pods_JJQ.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		46AF3DF1222455BC0029A596 /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
 		46AF3DF3222455CA0029A596 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		46AF3DF62224A9CF0029A596 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46AF3DFA2224B81B0029A596 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BB2912247CCCB46926EF0C07 /* Pods-JJQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4BD55C1A8B2B4681D60C19 /* Pods-JJQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		46AF3DD0222450BA0029A596 /* JJQ */ = {
 			isa = PBXGroup;
 			children = (
+				46AF3DF92224B7FC0029A596 /* Extensions */,
 				46AF3DF5222456050029A596 /* Launch */,
 				46AF3DEE2224557C0029A596 /* Scenes */,
 				46AF3DD1222450BA0029A596 /* AppDelegate.swift */,
@@ -120,6 +123,14 @@
 				46AF3DD5222450BA0029A596 /* BaseTabViewController.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		46AF3DF92224B7FC0029A596 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46AF3DFA2224B81B0029A596 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				46AF3DF2222455BC0029A596 /* PlaceListViewController.swift in Sources */,
 				46AF3DF4222455CA0029A596 /* DetailViewController.swift in Sources */,
 				46AF3DD2222450BA0029A596 /* AppDelegate.swift in Sources */,
+				46AF3DFB2224B81B0029A596 /* UIColor+Extensions.swift in Sources */,
 				46AF3DF02224559D0029A596 /* ItemListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
