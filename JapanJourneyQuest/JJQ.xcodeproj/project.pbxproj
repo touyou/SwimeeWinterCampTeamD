@@ -30,8 +30,11 @@
 		46AF3E0E2224EA490029A596 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E0D2224EA490029A596 /* UITableView+Extensions.swift */; };
 		46AF3E122224EA5D0029A596 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */; };
 		46AF3E132224EA5D0029A596 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E102224EA5B0029A596 /* URL+Extensions.swift */; };
-		46AF3E142224EA5D0029A596 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */; };
 		907837B997D9B719ECCCF5F6 /* Pods_JJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F778A6CF58C6A4E3D58125 /* Pods_JJQ.framework */; };
+		CA16234322250451004A1818 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16234222250451004A1818 /* ItemCollectionViewCell.swift */; };
+		CA1623452225052E004A1818 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1623442225052E004A1818 /* UIImage+Extensions.swift */; };
+		CA1C1CA92225004B006DA8B9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C1CA82225004B006DA8B9 /* Item.swift */; };
+		CA1C1CAB22250102006DA8B9 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C1CAA22250102006DA8B9 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +64,11 @@
 		46AF3E0D2224EA490029A596 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E102224EA5B0029A596 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
-		46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		BB2912247CCCB46926EF0C07 /* Pods-JJQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.debug.xcconfig"; sourceTree = "<group>"; };
+		CA16234222250451004A1818 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA1623442225052E004A1818 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CA1C1CA82225004B006DA8B9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CA1C1CAA22250102006DA8B9 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		FC4BD55C1A8B2B4681D60C19 /* Pods-JJQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +130,7 @@
 				46AF3DD8222450BB0029A596 /* Assets.xcassets */,
 				46AF3DDD222450BB0029A596 /* Info.plist */,
 				46AF3DF62224A9CF0029A596 /* GoogleService-Info.plist */,
+				CA16234622250A2E004A1818 /* Item */,
 			);
 			path = JJQ;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				46AF3DEF2224559D0029A596 /* ItemListViewController.swift */,
+				CA16234222250451004A1818 /* ItemCollectionViewCell.swift */,
 				46AF3DEB222455750029A596 /* ItemListViewController.storyboard */,
 				46AF3DF1222455BC0029A596 /* PlaceListViewController.swift */,
 				46AF3DE72224550D0029A596 /* PlaceListViewController.storyboard */,
@@ -155,7 +163,6 @@
 			children = (
 				46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */,
 				46AF3E102224EA5B0029A596 /* URL+Extensions.swift */,
-				46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */,
 				46AF3E0D2224EA490029A596 /* UITableView+Extensions.swift */,
 				46AF3DFA2224B81B0029A596 /* UIColor+Extensions.swift */,
 				46AF3DFE2224E9E60029A596 /* UIAlertController+Extensions.swift */,
@@ -163,6 +170,7 @@
 				46AF3E032224E9F40029A596 /* UINavigationController+Extensions.swift */,
 				46AF3E022224E9F40029A596 /* UITabBarController+Extensions.swift */,
 				46AF3DFD2224E9E60029A596 /* UICollectionView+Extensions.swift */,
+				CA1623442225052E004A1818 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,6 +183,15 @@
 				46AF3E072224EA2D0029A596 /* StoryboardInstantiable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA16234622250A2E004A1818 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				CA1C1CA82225004B006DA8B9 /* Item.swift */,
+				CA1C1CAA22250102006DA8B9 /* ItemManager.swift */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				46AF3E002224E9E60029A596 /* UICollectionView+Extensions.swift in Sources */,
-				46AF3E142224EA5D0029A596 /* UserDefaults+Extensions.swift in Sources */,
 				46AF3E0E2224EA490029A596 /* UITableView+Extensions.swift in Sources */,
 				46AF3DF2222455BC0029A596 /* PlaceListViewController.swift in Sources */,
 				46AF3E012224E9E60029A596 /* UIAlertController+Extensions.swift in Sources */,
@@ -352,6 +368,10 @@
 				46AF3DFF2224E9E60029A596 /* UIApplication+Extensions.swift in Sources */,
 				46AF3E0C2224EA2D0029A596 /* Reusable.swift in Sources */,
 				46AF3DD2222450BA0029A596 /* AppDelegate.swift in Sources */,
+				CA1C1CAB22250102006DA8B9 /* ItemManager.swift in Sources */,
+				CA1623452225052E004A1818 /* UIImage+Extensions.swift in Sources */,
+				CA1C1CA92225004B006DA8B9 /* Item.swift in Sources */,
+				CA16234322250451004A1818 /* ItemCollectionViewCell.swift in Sources */,
 				46AF3E042224E9F40029A596 /* UITabBarController+Extensions.swift in Sources */,
 				46AF3E0A2224EA2D0029A596 /* StoryboardInstantiable.swift in Sources */,
 				46AF3E0B2224EA2D0029A596 /* NibLoadable.swift in Sources */,
@@ -530,7 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4S4333JDW;
+				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = JJQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4S4333JDW;
+				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = JJQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
