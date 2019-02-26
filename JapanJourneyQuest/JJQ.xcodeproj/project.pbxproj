@@ -31,6 +31,7 @@
 		46AF3E122224EA5D0029A596 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */; };
 		46AF3E132224EA5D0029A596 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E102224EA5B0029A596 /* URL+Extensions.swift */; };
 		46AF3E142224EA5D0029A596 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */; };
+		46AF3E182224FA1E0029A596 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E172224FA1E0029A596 /* APIManager.swift */; };
 		907837B997D9B719ECCCF5F6 /* Pods_JJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F778A6CF58C6A4E3D58125 /* Pods_JJQ.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E102224EA5B0029A596 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		46AF3E172224FA1E0029A596 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BB2912247CCCB46926EF0C07 /* Pods-JJQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4BD55C1A8B2B4681D60C19 /* Pods-JJQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 		46AF3DD0222450BA0029A596 /* JJQ */ = {
 			isa = PBXGroup;
 			children = (
+				46AF3E152224F9ED0029A596 /* Managers */,
 				46AF3E062224EA090029A596 /* Protocols */,
 				46AF3DF92224B7FC0029A596 /* Extensions */,
 				46AF3DF5222456050029A596 /* Launch */,
@@ -175,6 +178,14 @@
 				46AF3E072224EA2D0029A596 /* StoryboardInstantiable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		46AF3E152224F9ED0029A596 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				46AF3E172224FA1E0029A596 /* APIManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				46AF3DD2222450BA0029A596 /* AppDelegate.swift in Sources */,
 				46AF3E042224E9F40029A596 /* UITabBarController+Extensions.swift in Sources */,
 				46AF3E0A2224EA2D0029A596 /* StoryboardInstantiable.swift in Sources */,
+				46AF3E182224FA1E0029A596 /* APIManager.swift in Sources */,
 				46AF3E0B2224EA2D0029A596 /* NibLoadable.swift in Sources */,
 				46AF3E122224EA5D0029A596 /* UIView+Extensions.swift in Sources */,
 				46AF3E132224EA5D0029A596 /* URL+Extensions.swift in Sources */,
