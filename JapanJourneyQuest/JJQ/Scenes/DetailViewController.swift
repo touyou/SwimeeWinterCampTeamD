@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var spot: Tourspot!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

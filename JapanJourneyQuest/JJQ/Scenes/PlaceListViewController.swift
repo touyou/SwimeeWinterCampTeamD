@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import DZNEmptyDataSet
 
 class PlaceListViewController: UIViewController {
 
@@ -19,12 +20,14 @@ class PlaceListViewController: UIViewController {
 
             tableView.dataSource = self
             tableView.delegate = self
+            tableView.emptyDataSetSource = self
+            tableView.emptyDataSetDelegate = self
             tableView.register(PlaceListTableViewCell.self)
-            let baseView = UIView()
-            baseView.backgroundColor = UIColor.JJQ.base
-            tableView.tableFooterView = baseView
+            tableView.tableFooterView = UIView()
+            tableView.refreshControl = refreshControll
         }
     }
+    var refreshControll = UIRefreshControl()
 
     var tourspots: [Tourspot] = []
 
@@ -32,6 +35,7 @@ class PlaceListViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.setupBarColor()
+        refreshControll.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +49,32 @@ class PlaceListViewController: UIViewController {
                 self.tourspots = tourspots
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                }
+            })
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "toDetail",
+            let viewController = segue.destination as? DetailViewController,
+            let value = sender as? Tourspot {
+
+            viewController.spot = value
+        }
+    }
+
+    @objc func refreshData() {
+
+        if let url = apiManager.templateRequest {
+
+            apiManager.getInformations(url, { [weak self] tourspots in
+                guard let self = self else { return }
+
+                self.tourspots = tourspots
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    self.refreshControll.endRefreshing()
                 }
             })
         }
@@ -73,4 +103,15 @@ extension PlaceListViewController: UITableViewDataSource {
 }
 
 extension PlaceListViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetail", sender: tourspots[indexPath.row])
+    }
+}
+
+extension PlaceListViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "back_cover")
+    }
 }

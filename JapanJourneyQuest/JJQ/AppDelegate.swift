@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         _ = ItemManager.shared
 
+        UITabBar.appearance().tintColor = UIColor.JJQ.main
+
         return true
     }
 
