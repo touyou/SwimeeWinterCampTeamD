@@ -6,6 +6,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.2):
     - BoringSSL-GRPC/Interface (= 0.0.2)
   - BoringSSL-GRPC/Interface (0.0.2)
+  - DZNEmptyDataSet (1.8.1)
   - Firebase/Auth (5.16.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.3.0)
@@ -121,6 +122,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DZNEmptyDataSet
   - Firebase/Core
   - FirebaseUI/Auth
   - FirebaseUI/Firestore
@@ -130,6 +132,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - BoringSSL-GRPC
+    - DZNEmptyDataSet
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -152,6 +155,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
   FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
@@ -171,6 +175,6 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
 
-PODFILE CHECKSUM: ce32c8c7fe36a5949fb449bbace26ff46a66365a
+PODFILE CHECKSUM: b613cd21694b50ecbd8a97818973f7452008f44f
 
 COCOAPODS: 1.5.3
