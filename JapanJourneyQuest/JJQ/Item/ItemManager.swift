@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import Firebase
 
 class ItemManager {
     static let shared = ItemManager()
@@ -14,7 +16,9 @@ class ItemManager {
     private init() {
     }
     
-     var userDefaults = UserDefaults.standard
+    let userDefaults = UserDefaults.standard
+    let storage = Storage.storage()
+    
     
     func getItemsFromUserDefaults() -> [Item] {
         if let items = userDefaults.array(forKey: "items") as? [Item] {
@@ -33,4 +37,28 @@ class ItemManager {
         items.append(item)
         setItemArrayToUserDefaults(items)
     }
+    
+    func post(placeID: Int, placeName: String, image: UIImage, comment: String, rating: Item.ItemRating, completion: @escaping (_ error: Error?) -> Void) {
+        let placeIDString = String(placeID)
+        let imageRef = storage.reference(withPath: "image/\(placeIDString).jpg")
+        guard let imageData = image.jpegData(compressionQuality: 1) else {
+            completion(postError.cannotConvertJPEG)
+            return
+        }
+        
+        imageRef.putData(imageData, metadata: nil) {[weak self] (_, error) in
+            if let error = error{
+                completion(error)
+            } else {
+                let item = Item(id: placeID, name: placeName, jewelID: Int.random(in: 0...11), imageRef: imageRef, comment: comment, rating: rating)
+                self?.saveItemToUserDefaults(item)
+                completion(nil)
+            }
+        }
+    }
+    
+    enum postError: Error {
+        case cannotConvertJPEG
+    }
 }
+
