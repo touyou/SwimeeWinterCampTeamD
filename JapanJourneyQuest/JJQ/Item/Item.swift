@@ -14,12 +14,25 @@ struct Item {
     var name: String
     var jewelID: Int
     var imageRef: StorageReference
+    var comment: String
+    var rating: ItemRating
     
     
-    init(id: Int, name: String, jewelID: Int, imageRef: StorageReference) {
+    init(id: Int, name: String, jewelID: Int, imageRef: StorageReference, comment: String, rating: ItemRating) {
         self.id = id
         self.name = name
         self.jewelID = jewelID
         self.imageRef = imageRef
+        self.comment = comment
+        self.rating = rating
+    }
+    
+    enum ItemRating: Int {
+        case star0 = 0
+        case star1 = 1
+        case star2 = 2
+        case star3 = 3
+        case star4 = 4
+        case star5 = 5
     }
 }
