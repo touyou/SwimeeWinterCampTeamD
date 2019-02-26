@@ -24,7 +24,13 @@ class ItemManager {
         }
     }
     
-    func saveItemsToUserDefaults(_ items: [Item]) {
-        userDefaults.set(items, forKey: "items")
+    func setItemArrayToUserDefaults(_ itemArray: [Item]) {
+        userDefaults.set(itemArray, forKey: "items")
+    }
+    
+    func saveItemToUserDefaults(_ item: Item) {
+        var items = getItemsFromUserDefaults()
+        items.append(item)
+        setItemArrayToUserDefaults(items)
     }
 }

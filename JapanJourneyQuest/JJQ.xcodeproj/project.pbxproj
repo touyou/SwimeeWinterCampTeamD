@@ -30,7 +30,6 @@
 		46AF3E0E2224EA490029A596 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E0D2224EA490029A596 /* UITableView+Extensions.swift */; };
 		46AF3E122224EA5D0029A596 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */; };
 		46AF3E132224EA5D0029A596 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E102224EA5B0029A596 /* URL+Extensions.swift */; };
-		46AF3E142224EA5D0029A596 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */; };
 		46AF3E182224FA1E0029A596 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF3E172224FA1E0029A596 /* APIManager.swift */; };
 		907837B997D9B719ECCCF5F6 /* Pods_JJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F778A6CF58C6A4E3D58125 /* Pods_JJQ.framework */; };
 		CA16234322250451004A1818 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16234222250451004A1818 /* ItemCollectionViewCell.swift */; };
@@ -66,7 +65,6 @@
 		46AF3E0D2224EA490029A596 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E0F2224EA5A0029A596 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E102224EA5B0029A596 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
-		46AF3E112224EA5B0029A596 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		46AF3E172224FA1E0029A596 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BB2912247CCCB46926EF0C07 /* Pods-JJQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJQ/Pods-JJQ.debug.xcconfig"; sourceTree = "<group>"; };
 		CA16234222250451004A1818 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -131,11 +129,11 @@
 				46AF3DF92224B7FC0029A596 /* Extensions */,
 				46AF3DF5222456050029A596 /* Launch */,
 				46AF3DEE2224557C0029A596 /* Scenes */,
+				CA16234622250A2E004A1818 /* Item */,
 				46AF3DD1222450BA0029A596 /* AppDelegate.swift */,
 				46AF3DD8222450BB0029A596 /* Assets.xcassets */,
 				46AF3DDD222450BB0029A596 /* Info.plist */,
 				46AF3DF62224A9CF0029A596 /* GoogleService-Info.plist */,
-				CA16234622250A2E004A1818 /* Item */,
 			);
 			path = JJQ;
 			sourceTree = "<group>";
@@ -196,7 +194,7 @@
 				46AF3E172224FA1E0029A596 /* APIManager.swift */,
 			);
 			path = Managers;
-      sourceTree = "<group>";
+			sourceTree = "<group>";
 		};
 		CA16234622250A2E004A1818 /* Item */ = {
 			isa = PBXGroup;
