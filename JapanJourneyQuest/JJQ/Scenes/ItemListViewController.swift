@@ -20,6 +20,8 @@ class ItemListViewController: UIViewController {
         collectionView.dataSource = self
         
         items = ItemManager.shared.getItemsFromUserDefaults()
+
+        navigationController?.setupBarColor()
     }
     
     func reloadCollectionView() {

@@ -12,5 +12,6 @@ target 'JJQ' do
   pod 'FirebaseUI/Storage'
 
   pod 'Alamofire'
+  pod 'DZNEmptyDataSet'
 
 end
