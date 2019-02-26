@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cbw-aX-VI4">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -42,12 +42,13 @@
             </objects>
             <point key="canvasLocation" x="2015.2" y="133.5832083958021"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="oD0-fy-BMf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q32-DT-xb6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vgg-hK-ezs"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icons8-home" id="vgg-hK-ezs"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Gy-nA-yug">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -70,4 +71,7 @@
             <point key="canvasLocation" x="3175" y="530"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-home" width="60" height="60"/>
+    </resources>
 </document>

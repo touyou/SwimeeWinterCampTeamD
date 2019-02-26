@@ -24,6 +24,7 @@ class PlaceListViewController: UIViewController {
             tableView.emptyDataSetDelegate = self
             tableView.register(PlaceListTableViewCell.self)
             tableView.tableFooterView = UIView()
+            refreshControll.tintColor = UIColor.JJQ.base
             tableView.refreshControl = refreshControll
         }
     }

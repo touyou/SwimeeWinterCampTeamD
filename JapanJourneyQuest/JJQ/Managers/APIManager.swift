@@ -156,8 +156,8 @@ struct Description: Codable {
 
 struct Place: Codable {
     struct Coordinate: Codable {
-        let longitude: String   // 経度
-        let latitude: String    // 緯度
+        let longitude: Double   // 経度
+        let latitude: Double    // 緯度
     }
 
     let coordinate: Coordinate?

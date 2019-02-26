@@ -10,23 +10,52 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+
+            tableView.dataSource = self
+            tableView.register(SpotTitleTableViewCell.self)
+            tableView.register(MapTableViewCell.self)
+            tableView.register(DescriptionTableViewCell.self)
+            tableView.tableFooterView = UIView()
+        }
+    }
     var spot: Tourspot!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
+extension DetailViewController: UITableViewDataSource {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0 ..< 1:
+            let cell: SpotTitleTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.titleLabel.text = spot.name.name1?.written
+            return cell
+        case 1 ..< 2:
+            let cell: MapTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.longitude = spot.place?.coordinate?.longitude ?? 139.7320
+            cell.latitude = spot.place?.coordinate?.latitude ?? 35.7090
+            cell.setCenter()
+            return cell
+        case 2 ..< 3:
+            let cell: DescriptionTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.descriptionLabel.text = spot.descs?.first?.body ?? "No description"
+            return cell
+        default:
+            let cell = UITableViewCell()
+            return cell
+        }
+    }
 }
